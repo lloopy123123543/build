@@ -69,9 +69,14 @@ Route::prefix("complect/delete/{id}") -> group( function () {
     Route::delete("constrained", [ComplectController::class, "ConstrainedDelete"]);
 });
 
-
-
-// Route::prefix("note") -> group( function () {
-//     Route::post("create", [NoteController::class, "create_note"]);
-//     Route::post("show/notes", [NoteController::class, "show_notes"]);
-// });
+// Просмотреть
+Route::prefix("complect/show") -> group( function () {
+    // Route::delete("motherboard", [ComplectController::class, "MotherBoardDelete"]);
+    // Route::delete("processor", [ComplectController::class, "ProcessorDelete"]);
+    // Route::delete("gpu", [ComplectController::class, "GPUDelete"]);
+    // Route::delete("ram", [ComplectController::class, "RAMDelete"]);
+    // Route::delete("power", [ComplectController::class, "PowerDelete"]);
+    // Route::delete("cooling", [ComplectController::class, "CoolingDelete"]);
+    // Route::delete("storage", [ComplectController::class, "StorageDelete"]);
+    Route::get("constrained", [ComplectController::class, "ConstrainedShowAll"]);
+});

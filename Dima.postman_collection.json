@@ -1,0 +1,1507 @@
+{
+	"info": {
+		"_postman_id": "f08867cf-a873-4d1f-82b8-e6b2508a0fea",
+		"name": "Dima",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Complect",
+			"item": [
+				{
+					"name": "MotherBoard",
+					"item": [
+						{
+							"name": "Create MotherBoard",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "72f59702f9f1a1594a27ce013f233d45",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "hp",
+											"type": "default"
+										},
+										{
+											"key": "cost",
+											"value": "100",
+											"type": "default"
+										},
+										{
+											"key": "socket",
+											"value": "1155",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/complect/add/motherboard",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"complect",
+										"add",
+										"motherboard"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Edit MotherBoard",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "72f59702f9f1a1594a27ce013f233d45",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "hp",
+											"type": "default"
+										},
+										{
+											"key": "cost",
+											"value": "110",
+											"type": "default"
+										},
+										{
+											"key": "socket",
+											"value": "1155",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/complect/edit/1/motherboard",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"complect",
+										"edit",
+										"1",
+										"motherboard"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete MotherBoard",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "72f59702f9f1a1594a27ce013f233d45",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "hp",
+											"type": "default",
+											"disabled": true
+										},
+										{
+											"key": "cost",
+											"value": "110",
+											"type": "default",
+											"disabled": true
+										},
+										{
+											"key": "socket",
+											"value": "1155",
+											"type": "default",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/complect/delete/1/motherboard",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"complect",
+										"delete",
+										"1",
+										"motherboard"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Processor",
+					"item": [
+						{
+							"name": "Create Processor",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "72f59702f9f1a1594a27ce013f233d45",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "hp",
+											"type": "default"
+										},
+										{
+											"key": "cost",
+											"value": "100",
+											"type": "default"
+										},
+										{
+											"key": "socket",
+											"value": "1155",
+											"type": "default"
+										},
+										{
+											"key": "company",
+											"value": "intel",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/complect/add/processor",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"complect",
+										"add",
+										"processor"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Edit MotherBoard",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "72f59702f9f1a1594a27ce013f233d45",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "hp",
+											"type": "default"
+										},
+										{
+											"key": "cost",
+											"value": "110",
+											"type": "default"
+										},
+										{
+											"key": "socket",
+											"value": "1155",
+											"type": "default"
+										},
+										{
+											"key": "company",
+											"value": "amd",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/complect/edit/1/processor",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"complect",
+										"edit",
+										"1",
+										"processor"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Processor",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "72f59702f9f1a1594a27ce013f233d45",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "hp",
+											"type": "default",
+											"disabled": true
+										},
+										{
+											"key": "cost",
+											"value": "110",
+											"type": "default",
+											"disabled": true
+										},
+										{
+											"key": "socket",
+											"value": "1155",
+											"type": "default",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/complect/delete/1/processor",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"complect",
+										"delete",
+										"1",
+										"processor"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "GPU",
+					"item": [
+						{
+							"name": "Create GPU",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "72f59702f9f1a1594a27ce013f233d45",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "hp",
+											"type": "default"
+										},
+										{
+											"key": "cost",
+											"value": "100",
+											"type": "default"
+										},
+										{
+											"key": "company",
+											"value": "intel",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/complect/add/gpu",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"complect",
+										"add",
+										"gpu"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Edit GPU",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "72f59702f9f1a1594a27ce013f233d45",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "hp",
+											"type": "default"
+										},
+										{
+											"key": "cost",
+											"value": "110",
+											"type": "default"
+										},
+										{
+											"key": "company",
+											"value": "amd",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/complect/edit/1/gpu",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"complect",
+										"edit",
+										"1",
+										"gpu"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete GPU",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "72f59702f9f1a1594a27ce013f233d45",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "hp",
+											"type": "default",
+											"disabled": true
+										},
+										{
+											"key": "cost",
+											"value": "110",
+											"type": "default",
+											"disabled": true
+										},
+										{
+											"key": "socket",
+											"value": "1155",
+											"type": "default",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/complect/delete/1/gpu",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"complect",
+										"delete",
+										"1",
+										"gpu"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "RAM",
+					"item": [
+						{
+							"name": "Create RAM",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "72f59702f9f1a1594a27ce013f233d45",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "hp",
+											"type": "default"
+										},
+										{
+											"key": "cost",
+											"value": "100",
+											"type": "default"
+										},
+										{
+											"key": "gb",
+											"value": "8",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/complect/add/ram",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"complect",
+										"add",
+										"ram"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Edit RAM",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "72f59702f9f1a1594a27ce013f233d45",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "hp",
+											"type": "default"
+										},
+										{
+											"key": "cost",
+											"value": "110",
+											"type": "default"
+										},
+										{
+											"key": "gb",
+											"value": "2",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/complect/edit/2/ram",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"complect",
+										"edit",
+										"2",
+										"ram"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete RAM",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "72f59702f9f1a1594a27ce013f233d45",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "hp",
+											"type": "default",
+											"disabled": true
+										},
+										{
+											"key": "cost",
+											"value": "110",
+											"type": "default",
+											"disabled": true
+										},
+										{
+											"key": "socket",
+											"value": "1155",
+											"type": "default",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/complect/delete/2/ram",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"complect",
+										"delete",
+										"2",
+										"ram"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Power",
+					"item": [
+						{
+							"name": "Create Power",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "72f59702f9f1a1594a27ce013f233d45",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "hp",
+											"type": "default"
+										},
+										{
+											"key": "cost",
+											"value": "100",
+											"type": "default"
+										},
+										{
+											"key": "ww",
+											"value": "500",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/complect/add/power",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"complect",
+										"add",
+										"power"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Power",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "72f59702f9f1a1594a27ce013f233d45",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "hp",
+											"type": "default"
+										},
+										{
+											"key": "cost",
+											"value": "110",
+											"type": "default"
+										},
+										{
+											"key": "ww",
+											"value": "220",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/complect/edit/1/power",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"complect",
+										"edit",
+										"1",
+										"power"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete GPU",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "72f59702f9f1a1594a27ce013f233d45",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "hp",
+											"type": "default",
+											"disabled": true
+										},
+										{
+											"key": "cost",
+											"value": "110",
+											"type": "default",
+											"disabled": true
+										},
+										{
+											"key": "socket",
+											"value": "1155",
+											"type": "default",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/complect/delete/1/power",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"complect",
+										"delete",
+										"1",
+										"power"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Cooling",
+					"item": [
+						{
+							"name": "Create Cooling",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "72f59702f9f1a1594a27ce013f233d45",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "hp",
+											"type": "default"
+										},
+										{
+											"key": "cost",
+											"value": "100",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/complect/add/cooling",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"complect",
+										"add",
+										"cooling"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Edit Cooling",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "72f59702f9f1a1594a27ce013f233d45",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "hp",
+											"type": "default"
+										},
+										{
+											"key": "cost",
+											"value": "110",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/complect/edit/1/cooling",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"complect",
+										"edit",
+										"1",
+										"cooling"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Cooling",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "72f59702f9f1a1594a27ce013f233d45",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "hp",
+											"type": "default",
+											"disabled": true
+										},
+										{
+											"key": "cost",
+											"value": "110",
+											"type": "default",
+											"disabled": true
+										},
+										{
+											"key": "socket",
+											"value": "1155",
+											"type": "default",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/complect/delete/1/cooling",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"complect",
+										"delete",
+										"1",
+										"cooling"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Storage",
+					"item": [
+						{
+							"name": "Create Storage",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "72f59702f9f1a1594a27ce013f233d45",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "hp",
+											"type": "default"
+										},
+										{
+											"key": "cost",
+											"value": "100",
+											"type": "default"
+										},
+										{
+											"key": "gb",
+											"value": "500",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/complect/add/storage",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"complect",
+										"add",
+										"storage"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Edit Storage",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "72f59702f9f1a1594a27ce013f233d45",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "hp",
+											"type": "default"
+										},
+										{
+											"key": "cost",
+											"value": "110",
+											"type": "default"
+										},
+										{
+											"key": "gb",
+											"value": "500",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/complect/edit/1/storage",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"complect",
+										"edit",
+										"1",
+										"storage"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Storage",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "72f59702f9f1a1594a27ce013f233d45",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "hp",
+											"type": "default",
+											"disabled": true
+										},
+										{
+											"key": "cost",
+											"value": "110",
+											"type": "default",
+											"disabled": true
+										},
+										{
+											"key": "socket",
+											"value": "1155",
+											"type": "default",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/complect/delete/1/storage",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"complect",
+										"delete",
+										"1",
+										"storage"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Constrained",
+					"item": [
+						{
+							"name": "Create Constrained",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "72f59702f9f1a1594a27ce013f233d45",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "motherboard",
+											"value": "3",
+											"type": "default"
+										},
+										{
+											"key": "RAM",
+											"value": "3",
+											"type": "default"
+										},
+										{
+											"key": "power",
+											"value": "3",
+											"type": "default"
+										},
+										{
+											"key": "storage",
+											"value": "3",
+											"type": "default"
+										},
+										{
+											"key": "processor",
+											"value": "3",
+											"type": "default"
+										},
+										{
+											"key": "GPU",
+											"value": "3",
+											"type": "default"
+										},
+										{
+											"key": "cooling",
+											"value": "3",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/complect/add/constrained",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"complect",
+										"add",
+										"constrained"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Edit Constrained",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "72f59702f9f1a1594a27ce013f233d45",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "hp",
+											"type": "default"
+										},
+										{
+											"key": "cost",
+											"value": "110",
+											"type": "default"
+										},
+										{
+											"key": "gb",
+											"value": "500",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/complect/edit/1/storage",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"complect",
+										"edit",
+										"1",
+										"storage"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Show Constrained",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "72f59702f9f1a1594a27ce013f233d45",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8000/api/complect/show/constrained",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"complect",
+										"show",
+										"constrained"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Constrained",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "72f59702f9f1a1594a27ce013f233d45",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "hp",
+											"type": "default",
+											"disabled": true
+										},
+										{
+											"key": "cost",
+											"value": "110",
+											"type": "default",
+											"disabled": true
+										},
+										{
+											"key": "socket",
+											"value": "1155",
+											"type": "default",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/complect/delete/1/storage",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"complect",
+										"delete",
+										"1",
+										"storage"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "login",
+							"value": "admin",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/user/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "all",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "72f59702f9f1a1594a27ce013f233d45",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/user/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Registration",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "login",
+							"value": "admin",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "default"
+						},
+						{
+							"key": "name",
+							"value": "sdfsdf",
+							"type": "default"
+						},
+						{
+							"key": "surname",
+							"value": "sdfsdf",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/user/registration",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user",
+						"registration"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
