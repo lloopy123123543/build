@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Constrained;
+
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
@@ -16,6 +16,7 @@ use App\Models\Power;
 use App\Models\Processor;
 use App\Models\RAM;
 use App\Models\Storage;
+use App\Models\Constrained;
 
 
 class ComplectController extends BaseController
@@ -494,66 +495,20 @@ class ComplectController extends BaseController
             if ($user != null) {
                 $constr = Constrained::all()->where("user_id", $user->id);
 
-                // $constr ->motherboard = Motherboard::all()->where("id", $constr -> motherboard)
+                foreach ($constr as $c) {
+                    $c->motherboard = Motherboard::find($c->motherboard);
+                    $c->processor = Processor::find($c->processor);
+                    $c->gpu = GPU::find($c->gpu);
+                    $c->ram = RAM::find($c->ram);
+                    $c->power = Power::find($c->power);
+                    $c->cooling = Cooling::find($c->cooling);
+                    $c->storage = Storage::find($c->storage);
+                }
 
-                    $motherboard = Motherboard::all()->where("id", $constr -> motherboard);
-                    $processor = Processor::all()->where("id", $constr -> processor);
-                    $GPU = GPU::all()->where("id", $constr -> GPU)();
-                    $RAM = RAM::all()->where("id", $constr -> RAM);
-                    $power = Power::all()->where("id", $constr -> inputpower);
-                    $cooling = Cooling::all()->where("id", $constr -> cooling);
-                    $storage = Storage::all()->where("id", $constr -> storage);
+                return response()->json(['data' => $constr]);
 
-                    // return response() -> json(['data' => [
-                    //     "motherboard"=> $motherboard,
-                    //     "processor"=> $processor,
-                    //     "GPU" => $GPU,
-                    //     "RAM" => $RAM,
-                    //     "power" => $power,
-                    //     "cooling" => $cooling,
-                    //     "storage" => $storage,
-                    //     "cost" => 0
-                    // ] ]);
-                    return response()->json($motherboard);
             }else{return response()->json("user not found");}
         }else{return response()->json("token is empty");}
     }
-//     public function ConstrainedShowAll(Request $request)
-// {
-//     $bearer = $request->header("authorization");
-//     $token = explode(" ", $bearer)[1];
-//     $user = User::where("token", $token)->first();
-
-//     if ($bearer != '') {
-//         if ($user != null) {
-//             $constr = Constrained::find($user->id);
-
-//             $motherboard = Motherboard::find($constr->motherboard);
-//             $processor = Processor::find($constr->processor);
-//             $GPU = GPU::find($constr->GPU);
-//             $RAM = RAM::find($constr->RAM);
-//             $power = Power::find($constr->inputpower);
-//             $cooling = Cooling::find($constr->cooling);
-//             $storage = Storage::find($constr->storage);
-
-//             return response()->json([
-//                 'data' => [
-//                     "motherboard" => $motherboard,
-//                     "processor" => $processor,
-//                     "GPU" => $GPU,
-//                     "RAM" => $RAM,
-//                     "power" => $power,
-//                     "cooling" => $cooling,
-//                     "storage" => $storage,
-//                     "cost" => 0
-//                 ]
-//             ]);
-//         } else {
-//             return response()->json("user not found");
-//         }
-//     } else {
-//         return response()->json("token is empty");
-//     }
-// }
 }
 
