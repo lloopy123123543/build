@@ -32,8 +32,12 @@ class UserController extends BaseController
                 $add = new User();
                 $add->login = $request->input("login");
                 $add->password = $request->input("password");
+                $token = bin2hex(openssl_random_pseudo_bytes(16));
+                $add->token = $token;
                 $add->save();
-                return response()->json(["data" => ["status" => "profile was created"]]);
+                return response()->json(["data" => [
+                    "token" => $token
+                ]]);
             } else {
                 return response()->json(["error" => ["errors" => "login alrady exist"]]);
             }

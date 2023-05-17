@@ -1,5 +1,5 @@
 {
-  "name": "build_vite",
+  "name": "build_vue",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,8 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "amqplib": "^0.5.1",
-    "tailwind": "^4.0.0",
+    "axios": "^1.4.0",
     "vue": "^3.2.47",
     "vue-router": "^4.2.0"
   },

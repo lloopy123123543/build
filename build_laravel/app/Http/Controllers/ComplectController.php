@@ -428,7 +428,7 @@ class ComplectController extends BaseController
 
         if ($bearer != '') {
             if ($user != null) {
-                if ($user->login == 'admin') {
+
                     $add = new Constrained();
                     $add -> motherboard = $request -> input('motherboard');
                     $add -> processor = $request -> input('processor');
@@ -440,7 +440,6 @@ class ComplectController extends BaseController
                     $add -> user_id = $user->id;
                     $add -> save();
                     return response() -> json(['message' => 'created' ]);
-                }else{return response()->json("forbidden for you");}
             }else{return response()->json("user not found");}
         }else{return response()->json("token is empty");}
     }
