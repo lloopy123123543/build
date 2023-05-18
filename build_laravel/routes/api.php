@@ -39,7 +39,7 @@ Route::prefix("complect/add") -> group( function () {
     Route::post("power", [ComplectController::class, "PowerAdd"]);
     Route::post("cooling", [ComplectController::class, "CoolingAdd"]);
     Route::post("storage", [ComplectController::class, "StorageAdd"]);
-    Route::post("constrained", [ComplectController::class, "ConstrainedAdd"]);
+    Route::get("constraineds", [ComplectController::class, "ConstrainedAdd"]);
 
 });
 
@@ -71,12 +71,12 @@ Route::prefix("complect/delete/{id}") -> group( function () {
 
 // Просмотреть
 Route::prefix("complect/show") -> group( function () {
-    // Route::delete("motherboard", [ComplectController::class, "MotherBoardDelete"]);
-    // Route::delete("processor", [ComplectController::class, "ProcessorDelete"]);
-    // Route::delete("gpu", [ComplectController::class, "GPUDelete"]);
-    // Route::delete("ram", [ComplectController::class, "RAMDelete"]);
-    // Route::delete("power", [ComplectController::class, "PowerDelete"]);
-    // Route::delete("cooling", [ComplectController::class, "CoolingDelete"]);
-    // Route::delete("storage", [ComplectController::class, "StorageDelete"]);
+    Route::get("motherboard", [ComplectController::class, "MotherBoardShowAll"]);
+    Route::get("processor", [ComplectController::class, "ProcessorShowAll"]);
+    Route::get("gpu", [ComplectController::class, "GPUShowAll"]);
+    Route::get("ram", [ComplectController::class, "RAMShowAll"]);
+    Route::get("power", [ComplectController::class, "PowerShowAll"]);
+    Route::get("cooling", [ComplectController::class, "CoolingShowAll"]);
+    Route::get("storage", [ComplectController::class, "StorageShowAll"]);
     Route::get("constrained", [ComplectController::class, "ConstrainedShowAll"]);
 });

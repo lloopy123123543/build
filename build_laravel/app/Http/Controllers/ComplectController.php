@@ -78,6 +78,23 @@ class ComplectController extends BaseController
             }else{return response()->json("user not found");}
         }else{return response()->json("token is empty");}
     }
+    public function MotherBoardShowAll(Request $request)
+    {
+        $bearer = $request->header("authorization");
+        $token = explode(" ", $bearer)[1];
+        $user = User::all()->where("token", $token)->first();
+
+
+        if ($bearer != '') {
+            if ($user != null) {
+                $comp = Motherboard::all();
+
+
+                return response()->json(['data' => $comp]);
+
+            }else{return response()->json("user not found");}
+        }else{return response()->json("token is empty");}
+    }
 
 
 // PROCESSOR
@@ -134,6 +151,23 @@ class ComplectController extends BaseController
                     $add -> delete();
                     return response() -> json(['message' => 'deleted' ]);
                 }else{return response()->json("forbidden for you");}
+            }else{return response()->json("user not found");}
+        }else{return response()->json("token is empty");}
+    }
+    public function ProcessorShowAll(Request $request)
+    {
+        $bearer = $request->header("authorization");
+        $token = explode(" ", $bearer)[1];
+        $user = User::all()->where("token", $token)->first();
+
+
+        if ($bearer != '') {
+            if ($user != null) {
+                $comp = Processor::all();
+
+
+                return response()->json(['data' => $comp]);
+
             }else{return response()->json("user not found");}
         }else{return response()->json("token is empty");}
     }
@@ -194,6 +228,23 @@ class ComplectController extends BaseController
             }else{return response()->json("user not found");}
         }else{return response()->json("token is empty");}
     }
+    public function GPUShowAll(Request $request)
+    {
+        $bearer = $request->header("authorization");
+        $token = explode(" ", $bearer)[1];
+        $user = User::all()->where("token", $token)->first();
+
+
+        if ($bearer != '') {
+            if ($user != null) {
+                $comp = GPU::all();
+
+
+                return response()->json(['data' => $comp]);
+
+            }else{return response()->json("user not found");}
+        }else{return response()->json("token is empty");}
+    }
 
 
 // RAM
@@ -251,7 +302,23 @@ class ComplectController extends BaseController
             }else{return response()->json("user not found");}
         }else{return response()->json("token is empty");}
     }
+    public function RAMShowAll(Request $request)
+    {
+        $bearer = $request->header("authorization");
+        $token = explode(" ", $bearer)[1];
+        $user = User::all()->where("token", $token)->first();
 
+
+        if ($bearer != '') {
+            if ($user != null) {
+                $comp = RAM::all();
+
+
+                return response()->json(['data' => $comp]);
+
+            }else{return response()->json("user not found");}
+        }else{return response()->json("token is empty");}
+    }
 
 // POWER
     public function PowerAdd(Request $request)
@@ -305,6 +372,23 @@ class ComplectController extends BaseController
                     $add -> delete();
                     return response() -> json(['message' => 'deleted' ]);
                 }else{return response()->json("forbidden for you");}
+            }else{return response()->json("user not found");}
+        }else{return response()->json("token is empty");}
+    }
+    public function PowerShowAll(Request $request)
+    {
+        $bearer = $request->header("authorization");
+        $token = explode(" ", $bearer)[1];
+        $user = User::all()->where("token", $token)->first();
+
+
+        if ($bearer != '') {
+            if ($user != null) {
+                $comp = Power::all();
+
+
+                return response()->json(['data' => $comp]);
+
             }else{return response()->json("user not found");}
         }else{return response()->json("token is empty");}
     }
@@ -362,7 +446,23 @@ class ComplectController extends BaseController
             }else{return response()->json("user not found");}
         }else{return response()->json("token is empty");}
     }
+    public function CoolingShowAll(Request $request)
+    {
+        $bearer = $request->header("authorization");
+        $token = explode(" ", $bearer)[1];
+        $user = User::all()->where("token", $token)->first();
 
+
+        if ($bearer != '') {
+            if ($user != null) {
+                $comp = Cooling::all();
+
+
+                return response()->json(['data' => $comp]);
+
+            }else{return response()->json("user not found");}
+        }else{return response()->json("token is empty");}
+    }
 // STORAGE
     public function StorageAdd(Request $request)
     {
@@ -418,17 +518,34 @@ class ComplectController extends BaseController
             }else{return response()->json("user not found");}
         }else{return response()->json("token is empty");}
     }
-
-// CONSTRAINED
-    public function ConstrainedAdd(Request $request)
+    public function StorageShowAll(Request $request)
     {
         $bearer = $request->header("authorization");
         $token = explode(" ", $bearer)[1];
         $user = User::all()->where("token", $token)->first();
 
+
         if ($bearer != '') {
             if ($user != null) {
+                $comp = Storage::all();
 
+
+                return response()->json(['data' => $comp]);
+
+            }else{return response()->json("user not found");}
+        }else{return response()->json("token is empty");}
+    }
+
+// CONSTRAINED
+    public function ConstrainedAdd(Request $request)
+    {
+        $bearer = $request->header("authorization");
+
+
+        if ($bearer != '') {
+            $token = explode(" ", $bearer)[1];
+            $user = User::all()->where("token", $token)->first();
+            if ($user != null) {
                     $add = new Constrained();
                     $add -> motherboard = $request -> input('motherboard');
                     $add -> processor = $request -> input('processor');

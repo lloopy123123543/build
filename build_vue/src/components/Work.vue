@@ -1,6 +1,7 @@
 <script setup>
 import axios from "axios";
 import { ref } from 'vue'
+import Selector from './Selector.vue'
 
 const complects = ref([])
 axios({
@@ -12,10 +13,7 @@ axios({
         },
       })
       .then(res => {
-
          complects.value = res.data.data
-         console.log(complects.value)
-
 
       })
       .catch(error => alert("Что то не так"));
@@ -66,7 +64,9 @@ axios({
       </div>
     </div>
   </div>
+  <Selector></Selector>
 </div>
+
 
 
 
