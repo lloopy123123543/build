@@ -286,28 +286,28 @@
 									"formdata": [
 										{
 											"key": "name",
-											"value": "hp",
+											"value": "Intel Celeron G6900 OEM",
 											"type": "default"
 										},
 										{
 											"key": "cost",
-											"value": "110",
+											"value": "4990",
 											"type": "default"
 										},
 										{
 											"key": "socket",
-											"value": "1155",
+											"value": "LGA 1700",
 											"type": "default"
 										},
 										{
 											"key": "company",
-											"value": "amd",
+											"value": "intel",
 											"type": "default"
 										}
 									]
 								},
 								"url": {
-									"raw": "http://localhost:8000/api/complect/edit/1/processor",
+									"raw": "http://localhost:8000/api/complect/edit/2/processor",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -317,7 +317,7 @@
 										"api",
 										"complect",
 										"edit",
-										"1",
+										"2",
 										"processor"
 									]
 								}
@@ -489,23 +489,23 @@
 									"formdata": [
 										{
 											"key": "name",
-											"value": "hp",
+											"value": "GeForce GTX 1050 Ti 4 ГБ",
 											"type": "default"
 										},
 										{
 											"key": "cost",
-											"value": "110",
+											"value": "5083",
 											"type": "default"
 										},
 										{
 											"key": "company",
-											"value": "amd",
+											"value": "Китай",
 											"type": "default"
 										}
 									]
 								},
 								"url": {
-									"raw": "http://localhost:8000/api/complect/edit/1/gpu",
+									"raw": "http://localhost:8000/api/complect/edit/2/gpu",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -515,7 +515,7 @@
 										"api",
 										"complect",
 										"edit",
-										"1",
+										"2",
 										"gpu"
 									]
 								}
@@ -623,7 +623,7 @@
 									"bearer": [
 										{
 											"key": "token",
-											"value": "72f59702f9f1a1594a27ce013f233d45",
+											"value": "de04fa3ce95ab68f373f4c448ce0c6a6",
 											"type": "string"
 										}
 									]
@@ -635,17 +635,17 @@
 									"formdata": [
 										{
 											"key": "name",
-											"value": "hp",
+											"value": "AMD Radeon R3 Value Series",
 											"type": "default"
 										},
 										{
 											"key": "cost",
-											"value": "100",
+											"value": "1400",
 											"type": "default"
 										},
 										{
 											"key": "gb",
-											"value": "8",
+											"value": "4(1 шт)",
 											"type": "default"
 										}
 									]
@@ -675,7 +675,7 @@
 									"bearer": [
 										{
 											"key": "token",
-											"value": "72f59702f9f1a1594a27ce013f233d45",
+											"value": "de04fa3ce95ab68f373f4c448ce0c6a6",
 											"type": "string"
 										}
 									]
@@ -687,23 +687,23 @@
 									"formdata": [
 										{
 											"key": "name",
-											"value": "hp",
+											"value": "AMD Radeon R3 Value Series (2 шт)",
 											"type": "default"
 										},
 										{
 											"key": "cost",
-											"value": "110",
+											"value": "2800",
 											"type": "default"
 										},
 										{
 											"key": "gb",
-											"value": "2",
+											"value": "8",
 											"type": "default"
 										}
 									]
 								},
 								"url": {
-									"raw": "http://localhost:8000/api/complect/edit/2/ram",
+									"raw": "http://localhost:8000/api/complect/edit/3/ram",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -713,7 +713,7 @@
 										"api",
 										"complect",
 										"edit",
-										"2",
+										"3",
 										"ram"
 									]
 								}
@@ -866,14 +866,14 @@
 							"response": []
 						},
 						{
-							"name": "Power",
+							"name": "Edit Power",
 							"request": {
 								"auth": {
 									"type": "bearer",
 									"bearer": [
 										{
 											"key": "token",
-											"value": "72f59702f9f1a1594a27ce013f233d45",
+											"value": "de04fa3ce95ab68f373f4c448ce0c6a6",
 											"type": "string"
 										}
 									]
@@ -885,23 +885,23 @@
 									"formdata": [
 										{
 											"key": "name",
-											"value": "hp",
+											"value": "Блок питания Chieftec VALUE 500W",
 											"type": "default"
 										},
 										{
 											"key": "cost",
-											"value": "110",
+											"value": "3000",
 											"type": "default"
 										},
 										{
 											"key": "ww",
-											"value": "220",
+											"value": "500",
 											"type": "default"
 										}
 									]
 								},
 								"url": {
-									"raw": "http://localhost:8000/api/complect/edit/1/power",
+									"raw": "http://localhost:8000/api/complect/edit/2/power",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -911,7 +911,7 @@
 										"api",
 										"complect",
 										"edit",
-										"1",
+										"2",
 										"power"
 									]
 								}
@@ -1066,7 +1066,7 @@
 									"bearer": [
 										{
 											"key": "token",
-											"value": "72f59702f9f1a1594a27ce013f233d45",
+											"value": "de04fa3ce95ab68f373f4c448ce0c6a6",
 											"type": "string"
 										}
 									]
@@ -1078,18 +1078,18 @@
 									"formdata": [
 										{
 											"key": "name",
-											"value": "hp",
+											"value": "DK-17",
 											"type": "default"
 										},
 										{
 											"key": "cost",
-											"value": "110",
+											"value": "700",
 											"type": "default"
 										}
 									]
 								},
 								"url": {
-									"raw": "http://localhost:8000/api/complect/edit/1/cooling",
+									"raw": "http://localhost:8000/api/complect/edit/3/cooling",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -1099,7 +1099,7 @@
 										"api",
 										"complect",
 										"edit",
-										"1",
+										"3",
 										"cooling"
 									]
 								}
@@ -1259,7 +1259,7 @@
 									"bearer": [
 										{
 											"key": "token",
-											"value": "72f59702f9f1a1594a27ce013f233d45",
+											"value": "de04fa3ce95ab68f373f4c448ce0c6a6",
 											"type": "string"
 										}
 									]
@@ -1271,23 +1271,23 @@
 									"formdata": [
 										{
 											"key": "name",
-											"value": "hp",
+											"value": "SATA накопитель Goodram CL100 gen.3",
 											"type": "default"
 										},
 										{
 											"key": "cost",
-											"value": "110",
+											"value": "999",
 											"type": "default"
 										},
 										{
 											"key": "gb",
-											"value": "500",
+											"value": "120",
 											"type": "default"
 										}
 									]
 								},
 								"url": {
-									"raw": "http://localhost:8000/api/complect/edit/1/storage",
+									"raw": "http://localhost:8000/api/complect/edit/2/storage",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -1297,7 +1297,7 @@
 										"api",
 										"complect",
 										"edit",
-										"1",
+										"2",
 										"storage"
 									]
 								}
