@@ -29,7 +29,7 @@ action()
 <template>
 <div class="w-full from-cyan-500 to-blue-500  p-10">
   <Selector @vizov="action()"></Selector>
-  <div class="container  w-full mx-auto p-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
+  <div class="container  w-full mx-auto p-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 space-x-5 ">
     <div v-for="complect in complects" :key="complect.id" class="bg-white min-w-fit p-8 rounded-lg sm:w-3/4 mt-10 ">
       <div class="text-orange-400 font-bold">Код сборки: R{{complect.id }}</div>
       <div>

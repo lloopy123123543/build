@@ -71,7 +71,7 @@ class ComplectController extends BaseController
         if ($bearer != '') {
             if ($user != null) {
                 if ($user->login == 'admin') {
-                    $add = Motherboard::find($id)->first();
+                    $add = Motherboard::find($id);
                     $add -> delete();
                     return response() -> json(['message' => 'deleted' ]);
                 }else{return response()->json("forbidden for you");}
@@ -147,7 +147,7 @@ class ComplectController extends BaseController
         if ($bearer != '') {
             if ($user != null) {
                 if ($user->login == 'admin') {
-                    $add = Processor::find($id)->first();
+                    $add = Processor::find($id);
                     $add -> delete();
                     return response() -> json(['message' => 'deleted' ]);
                 }else{return response()->json("forbidden for you");}
@@ -221,7 +221,7 @@ class ComplectController extends BaseController
         if ($bearer != '') {
             if ($user != null) {
                 if ($user->login == 'admin') {
-                    $add = GPU::find($id)->first();
+                    $add = GPU::find($id);
                     $add -> delete();
                     return response() -> json(['message' => 'deleted' ]);
                 }else{return response()->json("forbidden for you");}
@@ -295,7 +295,7 @@ class ComplectController extends BaseController
         if ($bearer != '') {
             if ($user != null) {
                 if ($user->login == 'admin') {
-                    $add = RAM::find($id)->first();
+                    $add = RAM::find($id);
                     $add -> delete();
                     return response() -> json(['message' => 'deleted' ]);
                 }else{return response()->json("forbidden for you");}
@@ -368,7 +368,7 @@ class ComplectController extends BaseController
         if ($bearer != '') {
             if ($user != null) {
                 if ($user->login == 'admin') {
-                    $add = Power::find($id)->first();
+                    $add = Power::find($id);
                     $add -> delete();
                     return response() -> json(['message' => 'deleted' ]);
                 }else{return response()->json("forbidden for you");}
@@ -439,7 +439,7 @@ class ComplectController extends BaseController
         if ($bearer != '') {
             if ($user != null) {
                 if ($user->login == 'admin') {
-                    $add = Cooling::find($id)->first();
+                    $add = Cooling::find($id);
                     $add -> delete();
                     return response() -> json(['message' => 'deleted' ]);
                 }else{return response()->json("forbidden for you");}
@@ -569,7 +569,7 @@ class ComplectController extends BaseController
         if ($bearer != '') {
             if ($user != null) {
                 if ($user->login == 'admin') {
-                    $add = Constrained::find($id)->first();
+                    $add = Constrained::find($id);
                     $add -> motherboard = $request -> input('motherboard');
                     $add -> processor = $request -> input('processor');
                     $add -> GPU = $request -> input('GPU');

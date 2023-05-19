@@ -19,7 +19,7 @@
 									"bearer": [
 										{
 											"key": "token",
-											"value": "72f59702f9f1a1594a27ce013f233d45",
+											"value": "{{token\n}}",
 											"type": "string"
 										}
 									]
@@ -31,17 +31,17 @@
 									"formdata": [
 										{
 											"key": "name",
-											"value": "hp",
+											"value": "HUANANZHI QD4",
 											"type": "default"
 										},
 										{
 											"key": "cost",
-											"value": "100",
+											"value": "8232",
 											"type": "default"
 										},
 										{
 											"key": "socket",
-											"value": "1155",
+											"value": "1015",
 											"type": "default"
 										}
 									]
@@ -71,7 +71,7 @@
 									"bearer": [
 										{
 											"key": "token",
-											"value": "72f59702f9f1a1594a27ce013f233d45",
+											"value": "{{token\n}}",
 											"type": "string"
 										}
 									]
@@ -88,7 +88,7 @@
 										},
 										{
 											"key": "cost",
-											"value": "5 599",
+											"value": "5599",
 											"type": "default"
 										},
 										{
@@ -99,7 +99,7 @@
 									]
 								},
 								"url": {
-									"raw": "http://localhost:8000/api/complect/edit/2/motherboard",
+									"raw": "http://localhost:8000/api/complect/edit/3/motherboard",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -109,7 +109,7 @@
 										"api",
 										"complect",
 										"edit",
-										"2",
+										"3",
 										"motherboard"
 									]
 								}
@@ -124,7 +124,7 @@
 									"bearer": [
 										{
 											"key": "token",
-											"value": "72f59702f9f1a1594a27ce013f233d45",
+											"value": "{{token\n}}",
 											"type": "string"
 										}
 									]
@@ -155,7 +155,7 @@
 									]
 								},
 								"url": {
-									"raw": "http://localhost:8000/api/complect/delete/1/motherboard",
+									"raw": "http://localhost:8000/api/complect/delete/7/motherboard",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -165,7 +165,7 @@
 										"api",
 										"complect",
 										"delete",
-										"1",
+										"7",
 										"motherboard"
 									]
 								}
@@ -180,7 +180,7 @@
 									"bearer": [
 										{
 											"key": "token",
-											"value": "fbc43ab549f29abf4f94eeb06bcbeb6c",
+											"value": "{{token\n}}",
 											"type": "string"
 										}
 									]
@@ -217,7 +217,7 @@
 									"bearer": [
 										{
 											"key": "token",
-											"value": "72f59702f9f1a1594a27ce013f233d45",
+											"value": "{{token\n}}",
 											"type": "string"
 										}
 									]
@@ -274,7 +274,7 @@
 									"bearer": [
 										{
 											"key": "token",
-											"value": "72f59702f9f1a1594a27ce013f233d45",
+											"value": "{{token\n}}",
 											"type": "string"
 										}
 									]
@@ -332,7 +332,7 @@
 									"bearer": [
 										{
 											"key": "token",
-											"value": "72f59702f9f1a1594a27ce013f233d45",
+											"value": "{{token\n}}",
 											"type": "string"
 										}
 									]
@@ -363,7 +363,7 @@
 									]
 								},
 								"url": {
-									"raw": "http://localhost:8000/api/complect/delete/1/processor",
+									"raw": "http://localhost:8000/api/complect/delete/5/processor",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -373,7 +373,7 @@
 										"api",
 										"complect",
 										"delete",
-										"1",
+										"5",
 										"processor"
 									]
 								}
@@ -388,7 +388,7 @@
 									"bearer": [
 										{
 											"key": "token",
-											"value": "fbc43ab549f29abf4f94eeb06bcbeb6c",
+											"value": "{{token\n}}",
 											"type": "string"
 										}
 									]
@@ -425,7 +425,7 @@
 									"bearer": [
 										{
 											"key": "token",
-											"value": "72f59702f9f1a1594a27ce013f233d45",
+											"value": "{{token\n}}",
 											"type": "string"
 										}
 									]
@@ -477,7 +477,7 @@
 									"bearer": [
 										{
 											"key": "token",
-											"value": "72f59702f9f1a1594a27ce013f233d45",
+											"value": "{{token\n}}",
 											"type": "string"
 										}
 									]
@@ -530,7 +530,7 @@
 									"bearer": [
 										{
 											"key": "token",
-											"value": "72f59702f9f1a1594a27ce013f233d45",
+											"value": "{{token\n}}",
 											"type": "string"
 										}
 									]
@@ -561,7 +561,7 @@
 									]
 								},
 								"url": {
-									"raw": "http://localhost:8000/api/complect/delete/1/gpu",
+									"raw": "http://localhost:8000/api/complect/delete/4/gpu",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -571,7 +571,7 @@
 										"api",
 										"complect",
 										"delete",
-										"1",
+										"4",
 										"gpu"
 									]
 								}
@@ -586,7 +586,7 @@
 									"bearer": [
 										{
 											"key": "token",
-											"value": "fbc43ab549f29abf4f94eeb06bcbeb6c",
+											"value": "{{token\n}}",
 											"type": "string"
 										}
 									]
@@ -623,7 +623,7 @@
 									"bearer": [
 										{
 											"key": "token",
-											"value": "de04fa3ce95ab68f373f4c448ce0c6a6",
+											"value": "{{token\n}}",
 											"type": "string"
 										}
 									]
@@ -645,7 +645,7 @@
 										},
 										{
 											"key": "gb",
-											"value": "4(1 шт)",
+											"value": "4",
 											"type": "default"
 										}
 									]
@@ -675,7 +675,7 @@
 									"bearer": [
 										{
 											"key": "token",
-											"value": "de04fa3ce95ab68f373f4c448ce0c6a6",
+											"value": "{{token\n}}",
 											"type": "string"
 										}
 									]
@@ -728,7 +728,7 @@
 									"bearer": [
 										{
 											"key": "token",
-											"value": "72f59702f9f1a1594a27ce013f233d45",
+											"value": "{{token\n}}",
 											"type": "string"
 										}
 									]
@@ -759,7 +759,7 @@
 									]
 								},
 								"url": {
-									"raw": "http://localhost:8000/api/complect/delete/2/ram",
+									"raw": "http://localhost:8000/api/complect/delete/7/ram",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -769,7 +769,7 @@
 										"api",
 										"complect",
 										"delete",
-										"2",
+										"7",
 										"ram"
 									]
 								}
@@ -784,7 +784,7 @@
 									"bearer": [
 										{
 											"key": "token",
-											"value": "fbc43ab549f29abf4f94eeb06bcbeb6c",
+											"value": "{{token\n}}",
 											"type": "string"
 										}
 									]
@@ -821,7 +821,7 @@
 									"bearer": [
 										{
 											"key": "token",
-											"value": "72f59702f9f1a1594a27ce013f233d45",
+											"value": "{{token\n}}",
 											"type": "string"
 										}
 									]
@@ -873,7 +873,7 @@
 									"bearer": [
 										{
 											"key": "token",
-											"value": "de04fa3ce95ab68f373f4c448ce0c6a6",
+											"value": "{{token\n}}",
 											"type": "string"
 										}
 									]
@@ -926,7 +926,7 @@
 									"bearer": [
 										{
 											"key": "token",
-											"value": "72f59702f9f1a1594a27ce013f233d45",
+											"value": "{{token\n}}",
 											"type": "string"
 										}
 									]
@@ -957,7 +957,7 @@
 									]
 								},
 								"url": {
-									"raw": "http://localhost:8000/api/complect/delete/1/power",
+									"raw": "http://localhost:8000/api/complect/delete/6/power",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -967,7 +967,7 @@
 										"api",
 										"complect",
 										"delete",
-										"1",
+										"6",
 										"power"
 									]
 								}
@@ -976,19 +976,37 @@
 						},
 						{
 							"name": "Show Power",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
 							"request": {
 								"auth": {
 									"type": "bearer",
 									"bearer": [
 										{
 											"key": "token",
-											"value": "fbc43ab549f29abf4f94eeb06bcbeb6c",
+											"value": "{{token\n}}",
 											"type": "string"
 										}
 									]
 								},
 								"method": "GET",
 								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "hp",
+											"type": "default"
+										},
+										{
+											"key": "cost",
+											"value": "100",
+											"type": "default"
+										}
+									]
+								},
 								"url": {
 									"raw": "http://localhost:8000/api/complect/show/power",
 									"protocol": "http",
@@ -1019,7 +1037,7 @@
 									"bearer": [
 										{
 											"key": "token",
-											"value": "72f59702f9f1a1594a27ce013f233d45",
+											"value": "{{token\n}}",
 											"type": "string"
 										}
 									]
@@ -1066,7 +1084,7 @@
 									"bearer": [
 										{
 											"key": "token",
-											"value": "de04fa3ce95ab68f373f4c448ce0c6a6",
+											"value": "{{token\n}}",
 											"type": "string"
 										}
 									]
@@ -1114,7 +1132,7 @@
 									"bearer": [
 										{
 											"key": "token",
-											"value": "72f59702f9f1a1594a27ce013f233d45",
+											"value": "{{token\n}}",
 											"type": "string"
 										}
 									]
@@ -1145,7 +1163,7 @@
 									]
 								},
 								"url": {
-									"raw": "http://localhost:8000/api/complect/delete/1/cooling",
+									"raw": "http://localhost:8000/api/complect/delete/5/cooling",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -1155,7 +1173,7 @@
 										"api",
 										"complect",
 										"delete",
-										"1",
+										"5",
 										"cooling"
 									]
 								}
@@ -1170,7 +1188,7 @@
 									"bearer": [
 										{
 											"key": "token",
-											"value": "fbc43ab549f29abf4f94eeb06bcbeb6c",
+											"value": "{{token\n}}",
 											"type": "string"
 										}
 									]
@@ -1207,7 +1225,7 @@
 									"bearer": [
 										{
 											"key": "token",
-											"value": "72f59702f9f1a1594a27ce013f233d45",
+											"value": "{{token\n}}",
 											"type": "string"
 										}
 									]
@@ -1259,7 +1277,7 @@
 									"bearer": [
 										{
 											"key": "token",
-											"value": "de04fa3ce95ab68f373f4c448ce0c6a6",
+											"value": "{{token\n}}",
 											"type": "string"
 										}
 									]
@@ -1312,7 +1330,7 @@
 									"bearer": [
 										{
 											"key": "token",
-											"value": "72f59702f9f1a1594a27ce013f233d45",
+											"value": "{{token\n}}",
 											"type": "string"
 										}
 									]
@@ -1343,7 +1361,7 @@
 									]
 								},
 								"url": {
-									"raw": "http://localhost:8000/api/complect/delete/1/storage",
+									"raw": "http://localhost:8000/api/complect/delete/4/storage",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -1353,7 +1371,7 @@
 										"api",
 										"complect",
 										"delete",
-										"1",
+										"4",
 										"storage"
 									]
 								}
@@ -1368,7 +1386,7 @@
 									"bearer": [
 										{
 											"key": "token",
-											"value": "fbc43ab549f29abf4f94eeb06bcbeb6c",
+											"value": "{{token\n}}",
 											"type": "string"
 										}
 									]
@@ -1405,7 +1423,7 @@
 									"bearer": [
 										{
 											"key": "token",
-											"value": "f93c933b1676df894e442387482f9b15",
+											"value": "{{token\n}}",
 											"type": "string"
 										}
 									]
@@ -1477,7 +1495,7 @@
 									"bearer": [
 										{
 											"key": "token",
-											"value": "72f59702f9f1a1594a27ce013f233d45",
+											"value": "{{token\n}}",
 											"type": "string"
 										}
 									]
@@ -1505,7 +1523,7 @@
 									]
 								},
 								"url": {
-									"raw": "http://localhost:8000/api/complect/edit/1/storage",
+									"raw": "http://localhost:8000/api/complect/edit/2/storage",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -1515,7 +1533,7 @@
 										"api",
 										"complect",
 										"edit",
-										"1",
+										"2",
 										"storage"
 									]
 								}
@@ -1530,7 +1548,7 @@
 									"bearer": [
 										{
 											"key": "token",
-											"value": "f93c933b1676df894e442387482f9b15",
+											"value": "{{token\n}}",
 											"type": "string"
 										}
 									]
@@ -1562,7 +1580,7 @@
 									"bearer": [
 										{
 											"key": "token",
-											"value": "6e7792d2463d7ca3fd4cca6f186c95c9",
+											"value": "{{token\n}}",
 											"type": "string"
 										}
 									]
@@ -1593,7 +1611,7 @@
 									]
 								},
 								"url": {
-									"raw": "http://localhost:8000/api/complect/delete/5/constrained",
+									"raw": "http://localhost:8000/api/complect/delete/11/constrained",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -1603,7 +1621,7 @@
 										"api",
 										"complect",
 										"delete",
-										"5",
+										"11",
 										"constrained"
 									]
 								}
@@ -1658,7 +1676,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "72f59702f9f1a1594a27ce013f233d45",
+							"value": "{{token\n}}",
 							"type": "string"
 						}
 					]
