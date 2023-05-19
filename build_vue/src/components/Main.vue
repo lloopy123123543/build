@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from 'vue'
+import Adder from './Adder.vue'
 
 defineProps({
   msg: String,
@@ -18,12 +19,7 @@ const count = ref(0)
       <button class="px-10 py-2 rounded-full text-xl bg-orange-600 hover:bg-orange-400 ease-in duration-300">Start</button>
     </div>
   </div>
-  <div class="container mx-auto flex justify-center text-center items-center rounded-xl h-60 bg-white">
-    <blockquote class="w-3/4 text-xl italic font-semibold text-gray-900 dark:text-white">
-    <p>"Усрат ахуй атъебифи биляди"</p>
-    <p>©Джейсон Стэтэм</p>
-</blockquote>
-  </div>
+  <Adder></Adder>
 </div>
 
 

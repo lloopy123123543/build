@@ -164,7 +164,7 @@ axios({
         <select v-model="mother" id="motherboards"
           class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
           <option class="text-2xl" selected v-for="motherboard in motherboards" :key="motherboard.id" v-bind:value="motherboard.id">
-          <option>Название: {{ motherboard.name }}; Сокет: {{ motherboard.socket }}; Цена: {{ motherboard.cost }} </option>
+          <option>Название: {{ motherboard.name }}; Сокет: {{ motherboard.socket }}; Цена: {{ motherboard.cost }} руб </option>
           </option>
         </select>
       </div>
@@ -172,8 +172,8 @@ axios({
         <label for="processors" class="block mb-2 text-2xl font-medium text-gray-900 dark:text-white">Процессор</label>
         <select v-model="proces" id="processors"
           class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-          <option selected v-for="processor in processors" :key="processor.id" v-bind:value="processor.id">
-          <option>Название: {{ processor.name }}; Сокет: {{ processor.socket }}; Цена: {{ processor.cost }} </option>
+          <option class="text-2xl" selected v-for="processor in processors" :key="processor.id" v-bind:value="processor.id">
+          <option>Название: {{ processor.name }}; Сокет: {{ processor.socket }}; Цена: {{ processor.cost }} руб</option>
           </option>
         </select>
       </div>
@@ -181,8 +181,8 @@ axios({
         <label for="GPU" class="block mb-2 text-2xl font-medium text-gray-900 dark:text-white">Видеокарта</label>
         <select v-model="GPU" id="gpu"
           class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-          <option selected v-for="gpu in gpus" :key="gpu.id" v-bind:value="gpu.id">
-          <option>Название: {{ gpu.name }}; Производитель: {{ gpu.company }}; Цена: {{ gpu.cost }}</option>
+          <option class="text-2xl" selected v-for="gpu in gpus" :key="gpu.id" v-bind:value="gpu.id">
+          <option>Название: {{ gpu.name }}; Производитель: {{ gpu.company }}; Цена: {{ gpu.cost }} руб</option>
           </option>
         </select>
       </div>
@@ -190,8 +190,8 @@ axios({
         <label for="GPU" class="block mb-2 text-2xl font-medium text-gray-900 dark:text-white">RAM</label>
         <select v-model="RAM" id="ram"
           class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-          <option selected v-for="ram in rams" :key="ram.id" v-bind:value="ram.id">
-          <option>Название: {{ ram.name }}; Объем:{{ ram.gb }}; Цена:{{ ram.cost }}</option>
+          <option class="text-2xl" selected v-for="ram in rams" :key="ram.id" v-bind:value="ram.id">
+          <option>Название: {{ ram.name }}; Объем: {{ ram.gb }}гб; Цена: {{ ram.cost }} руб</option>
           </option>
         </select>
       </div>
@@ -199,8 +199,8 @@ axios({
         <label for="POWER" class="block mb-2 text-2xl font-medium text-gray-900 dark:text-white">Блок питания</label>
         <select v-model="POWER" id="power"
           class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-          <option selected v-for="power in powers" :key="power.id" v-bind:value="power.id">
-          <option>Название: {{ power.name }}; Ватт: {{ power.ww }}; Цена: {{ power.cost }}</option>
+          <option class="text-2xl" selected v-for="power in powers" :key="power.id" v-bind:value="power.id">
+          <option>Название: {{ power.name }}; Ватт: {{ power.ww }}; Цена: {{ power.cost }} руб</option>
           </option>
         </select>
       </div>
@@ -208,8 +208,8 @@ axios({
         <label for="cooling" class="block mb-2 text-2xl font-medium text-gray-900 dark:text-white">Охлаждение</label>
         <select v-model="COOLING" id="power"
           class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-          <option selected v-for="cooling in coolings" :key="cooling.id" v-bind:value="cooling.id">
-          <option>Название: {{ cooling.name }}; Цена: {{ cooling.cost }}</option>
+          <option class="text-2xl" selected v-for="cooling in coolings" :key="cooling.id" v-bind:value="cooling.id">
+          <option>Название: {{ cooling.name }}; Цена: {{ cooling.cost }} руб</option>
           </option>
         </select>
       </div>
@@ -217,8 +217,8 @@ axios({
         <label for="cooling" class="block mb-2 text-2xl font-medium text-gray-900 dark:text-white">Накопитель</label>
         <select v-model="STORAGE" id="storage"
           class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-          <option selected v-for="storage in storages" :key="storage.id" v-bind:value="storage.id">
-          <option>Название: {{ storage.name }}; Объем: {{ storage.gb }}; Цена: {{ storage.cost }}</option>
+          <option class="text-2xl" selected v-for="storage in storages" :key="storage.id" v-bind:value="storage.id">
+          <option>Название: {{ storage.name }}; Объем: {{ storage.gb }}; Цена: {{ storage.cost }} руб</option>
           </option>
         </select>
       </div>

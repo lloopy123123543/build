@@ -34,9 +34,9 @@ action()
       <div class="text-orange-400 font-bold">Код сборки: R{{complect.id }}</div>
       <div>
         <div class="text-2xl font-bold">Материнская плата:</div>
-        <div>Название:{{ complect.motherboard.name}}</div>
-        <div>Сокет:{{ complect.motherboard.socket}}</div>
-        <div>Цена:{{ complect.motherboard.cost}}</div>
+        <div>Название: {{ complect.motherboard.name}}</div>
+        <div>Сокет: {{ complect.motherboard.socket}}</div>
+        <div>Цена: {{ complect.motherboard.cost}}</div>
       </div>
       <div>
         <div class="text-2xl font-bold">Процессор</div>
@@ -46,26 +46,26 @@ action()
       </div>
       <div>
         <div class="text-2xl font-bold">Блок питания</div>
-        <div>Название:{{ complect.power.name}}</div>
-        <div>Ватт:{{ complect.power.ww}}</div>
-        <div>Цена:{{ complect.power.cost}}</div>
+        <div>Название: {{ complect.power.name}}</div>
+        <div>Ватт: {{ complect.power.ww}}</div>
+        <div>Цена: {{ complect.power.cost}}</div>
       </div>
       <div>
         <div class="text-2xl font-bold">RAM</div>
-        <div>Название:{{ complect.ram.name}}</div>
-        <div>GB:{{ complect.ram.gb}}</div>
-        <div>Цена:{{ complect.ram.cost}}</div>
+        <div>Название: {{ complect.ram.name}}</div>
+        <div>GB: {{ complect.ram.gb}}</div>
+        <div>Цена: {{ complect.ram.cost}}</div>
       </div>
       <div>
         <div class="text-2xl font-bold">Память</div>
-        <div>Название:{{ complect.storage.name}}</div>
-        <div>Объем (гб):{{ complect.storage.gb}}</div>
-        <div>Цена:{{ complect.storage.cost}}</div>
+        <div>Название: {{ complect.storage.name}}</div>
+        <div>Объем (гб): {{ complect.storage.gb}}</div>
+        <div>Цена: {{ complect.storage.cost}}</div>
       </div>
       <div>
         <div class="text-2xl font-bold">Охлаждение</div>
-        <div>Название:{{ complect.cooling.name}}</div>
-        <div>Цена:{{ complect.cooling.cost}}</div>
+        <div>Название: {{ complect.cooling.name}}</div>
+        <div>Цена: {{ complect.cooling.cost}}</div>
       </div>
       <div>
         <div class="text-2xl font-bold">Общая цена:</div>

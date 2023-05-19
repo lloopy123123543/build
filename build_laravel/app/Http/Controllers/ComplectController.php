@@ -276,7 +276,7 @@ class ComplectController extends BaseController
         if ($bearer != '') {
             if ($user != null) {
                 if ($user->login == 'admin') {
-                    $add = RAM::find($id)->first();
+                    $add = RAM::find($id);
                     $add -> name = $request -> input('name');
                     $add -> cost = $request -> input('cost');
                     $add -> gb = $request -> input('gb');
@@ -349,7 +349,7 @@ class ComplectController extends BaseController
         if ($bearer != '') {
             if ($user != null) {
                 if ($user->login == 'admin') {
-                    $add = Power::find($id)->first();
+                    $add = Power::find($id);
                     $add -> name = $request -> input('name');
                     $add -> cost = $request -> input('cost');
                     $add -> ww = $request -> input('ww');
@@ -421,7 +421,7 @@ class ComplectController extends BaseController
         if ($bearer != '') {
             if ($user != null) {
                 if ($user->login == 'admin') {
-                    $add = Cooling::find($id)->first();
+                    $add = Cooling::find($id);
                     $add -> name = $request -> input('name');
                     $add -> cost = $request -> input('cost');
                     $add -> save();
@@ -492,7 +492,7 @@ class ComplectController extends BaseController
         if ($bearer != '') {
             if ($user != null) {
                 if ($user->login == 'admin') {
-                    $add = Storage::find($id)->first();
+                    $add = Storage::find($id);
                     $add -> name = $request -> input('name');
                     $add -> gb = $request -> input('gb');
                     $add -> cost = $request -> input('cost');
