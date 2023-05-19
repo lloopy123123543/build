@@ -12,37 +12,43 @@ const storages = ref([])
 
 
 
-const mother = ''
+const mother = ref('')
 const proces = ref('')
 const GPU = ref('')
 const RAM = ref('')
 const POWER = ref('')
 const COOLING = ref('')
 const STORAGE = ref('')
-console.log(localStorage.getItem('token'))
+const tok = 'Bearer ' + localStorage.getItem('token')
+
+
 function enter(){
-    axios({
+  axios({
         method: 'post',
         url: 'http://localhost:8000/api/complect/add/constraineds',
         headers: {
-          'Authorization': 'Bearer ' + localStorage.getItem('token'),
+          'Content-Type': 'application/json',
+          'Authorization': tok
         },
         data: {
-          motherboard: mother,
+          motherboard: mother.value,
+          processor: proces.value,
+          storage:STORAGE.value,
+          power: POWER.value,
+          cooling: COOLING.value,
           RAM: RAM.value,
-          power: POWER,
-          storage: STORAGE,
-          processor: proces,
-          GPU: GPU,
-          cooling: COOLING,
+          GPU: GPU.value
         }
       })
       .then(res => {
-        alert("Сохранено")
+         complects.value = res.data.data
+         console.log(complects)
+
 
       })
-      .catch(error => alert("Что-то пошло не так, проверьте правильность логина и пароля"));
-  }
+      .catch(error => updateParent());
+
+    }
 
 axios({
   method: 'get',
@@ -149,7 +155,7 @@ axios({
   <div class="container mx-auto">
   
     <div
-      class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+      class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-yellow-300 md:text-5xl lg:text-6xl dark:text-white">
       Создайте и сохраните свою сборку здесь!</div>
     <div class="w-full from-cyan-500 to-blue-500">
       <div>
@@ -157,8 +163,8 @@ axios({
           плата</label>
         <select v-model="mother" id="motherboards"
           class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-          <option selected v-for="motherboard in motherboards" :key="motherboard.id" v-bind:value="motherboard.id">
-          <option>{{ motherboard.name }}</option>
+          <option class="text-2xl" selected v-for="motherboard in motherboards" :key="motherboard.id" v-bind:value="motherboard.id">
+          <option>Название: {{ motherboard.name }}; Сокет: {{ motherboard.socket }}; Цена: {{ motherboard.cost }} </option>
           </option>
         </select>
       </div>
@@ -167,16 +173,16 @@ axios({
         <select v-model="proces" id="processors"
           class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
           <option selected v-for="processor in processors" :key="processor.id" v-bind:value="processor.id">
-          <option>{{ processor.name }}</option>
+          <option>Название: {{ processor.name }}; Сокет: {{ processor.socket }}; Цена: {{ processor.cost }} </option>
           </option>
         </select>
       </div>
       <div>
-        <label for="GPU" class="block mb-2 text-2xl font-medium text-gray-900 dark:text-white">gpu</label>
+        <label for="GPU" class="block mb-2 text-2xl font-medium text-gray-900 dark:text-white">Видеокарта</label>
         <select v-model="GPU" id="gpu"
           class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
           <option selected v-for="gpu in gpus" :key="gpu.id" v-bind:value="gpu.id">
-          <option>{{ gpu.name }}</option>
+          <option>Название: {{ gpu.name }}; Производитель: {{ gpu.company }}; Цена: {{ gpu.cost }}</option>
           </option>
         </select>
       </div>
@@ -185,7 +191,7 @@ axios({
         <select v-model="RAM" id="ram"
           class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
           <option selected v-for="ram in rams" :key="ram.id" v-bind:value="ram.id">
-          <option>{{ ram.name }}</option>
+          <option>Название: {{ ram.name }}; Объем:{{ ram.gb }}; Цена:{{ ram.cost }}</option>
           </option>
         </select>
       </div>
@@ -194,7 +200,7 @@ axios({
         <select v-model="POWER" id="power"
           class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
           <option selected v-for="power in powers" :key="power.id" v-bind:value="power.id">
-          <option>{{ power.name }}</option>
+          <option>Название: {{ power.name }}; Ватт: {{ power.ww }}; Цена: {{ power.cost }}</option>
           </option>
         </select>
       </div>
@@ -203,7 +209,7 @@ axios({
         <select v-model="COOLING" id="power"
           class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
           <option selected v-for="cooling in coolings" :key="cooling.id" v-bind:value="cooling.id">
-          <option>{{ cooling.name }}</option>
+          <option>Название: {{ cooling.name }}; Цена: {{ cooling.cost }}</option>
           </option>
         </select>
       </div>
@@ -212,11 +218,11 @@ axios({
         <select v-model="STORAGE" id="storage"
           class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
           <option selected v-for="storage in storages" :key="storage.id" v-bind:value="storage.id">
-          <option>{{ storage.name }}</option>
+          <option>Название: {{ storage.name }}; Объем: {{ storage.gb }}; Цена: {{ storage.cost }}</option>
           </option>
         </select>
       </div>
-      <button @click="enter" class="m-10 px-5 py-2 bg-white rounded-2xl">Сохранить</button>
+      <button @click="enter(); $emit('vizov')" class="m-10 px-5 py-2 bg-white rounded-2xl">Сохранить</button>
     </div>
   </div>
 </template>

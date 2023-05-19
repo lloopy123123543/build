@@ -83,23 +83,23 @@
 									"formdata": [
 										{
 											"key": "name",
-											"value": "hp",
+											"value": "ASRock H610M-HVS",
 											"type": "default"
 										},
 										{
 											"key": "cost",
-											"value": "110",
+											"value": "5 599",
 											"type": "default"
 										},
 										{
 											"key": "socket",
-											"value": "1155",
+											"value": "LGA 1700",
 											"type": "default"
 										}
 									]
 								},
 								"url": {
-									"raw": "http://localhost:8000/api/complect/edit/1/motherboard",
+									"raw": "http://localhost:8000/api/complect/edit/2/motherboard",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -109,7 +109,7 @@
 										"api",
 										"complect",
 										"edit",
-										"1",
+										"2",
 										"motherboard"
 									]
 								}
@@ -166,6 +166,38 @@
 										"complect",
 										"delete",
 										"1",
+										"motherboard"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Show MotherBoards",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "fbc43ab549f29abf4f94eeb06bcbeb6c",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8000/api/complect/show/motherboard",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"complect",
+										"show",
 										"motherboard"
 									]
 								}
@@ -347,6 +379,38 @@
 								}
 							},
 							"response": []
+						},
+						{
+							"name": "Show Processors",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "fbc43ab549f29abf4f94eeb06bcbeb6c",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8000/api/complect/show/processor",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"complect",
+										"show",
+										"processor"
+									]
+								}
+							},
+							"response": []
 						}
 					]
 				},
@@ -508,6 +572,38 @@
 										"complect",
 										"delete",
 										"1",
+										"gpu"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Show GPU",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "fbc43ab549f29abf4f94eeb06bcbeb6c",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8000/api/complect/show/gpu",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"complect",
+										"show",
 										"gpu"
 									]
 								}
@@ -679,6 +775,38 @@
 								}
 							},
 							"response": []
+						},
+						{
+							"name": "Show RAM",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "fbc43ab549f29abf4f94eeb06bcbeb6c",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8000/api/complect/show/ram",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"complect",
+										"show",
+										"ram"
+									]
+								}
+							},
+							"response": []
 						}
 					]
 				},
@@ -845,6 +973,38 @@
 								}
 							},
 							"response": []
+						},
+						{
+							"name": "Show Power",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "fbc43ab549f29abf4f94eeb06bcbeb6c",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8000/api/complect/show/power",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"complect",
+										"show",
+										"power"
+									]
+								}
+							},
+							"response": []
 						}
 					]
 				},
@@ -996,6 +1156,38 @@
 										"complect",
 										"delete",
 										"1",
+										"cooling"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Show Cooling",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "fbc43ab549f29abf4f94eeb06bcbeb6c",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8000/api/complect/show/cooling",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"complect",
+										"show",
 										"cooling"
 									]
 								}
@@ -1167,6 +1359,38 @@
 								}
 							},
 							"response": []
+						},
+						{
+							"name": "Show Storage",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "fbc43ab549f29abf4f94eeb06bcbeb6c",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8000/api/complect/show/storage",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"complect",
+										"show",
+										"storage"
+									]
+								}
+							},
+							"response": []
 						}
 					]
 				},
@@ -1181,7 +1405,7 @@
 									"bearer": [
 										{
 											"key": "token",
-											"value": "72f59702f9f1a1594a27ce013f233d45",
+											"value": "f93c933b1676df894e442387482f9b15",
 											"type": "string"
 										}
 									]
@@ -1193,7 +1417,7 @@
 									"formdata": [
 										{
 											"key": "motherboard",
-											"value": "3",
+											"value": "2",
 											"type": "default"
 										},
 										{
@@ -1229,7 +1453,7 @@
 									]
 								},
 								"url": {
-									"raw": "http://localhost:8000/api/complect/add/constrained",
+									"raw": "http://localhost:8000/api/complect/add/constraineds",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -1239,7 +1463,7 @@
 										"api",
 										"complect",
 										"add",
-										"constrained"
+										"constraineds"
 									]
 								}
 							},
@@ -1306,7 +1530,7 @@
 									"bearer": [
 										{
 											"key": "token",
-											"value": "72f59702f9f1a1594a27ce013f233d45",
+											"value": "f93c933b1676df894e442387482f9b15",
 											"type": "string"
 										}
 									]
@@ -1338,7 +1562,7 @@
 									"bearer": [
 										{
 											"key": "token",
-											"value": "72f59702f9f1a1594a27ce013f233d45",
+											"value": "6e7792d2463d7ca3fd4cca6f186c95c9",
 											"type": "string"
 										}
 									]
@@ -1369,7 +1593,7 @@
 									]
 								},
 								"url": {
-									"raw": "http://localhost:8000/api/complect/delete/1/storage",
+									"raw": "http://localhost:8000/api/complect/delete/5/constrained",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -1379,8 +1603,8 @@
 										"api",
 										"complect",
 										"delete",
-										"1",
-										"storage"
+										"5",
+										"constrained"
 									]
 								}
 							},

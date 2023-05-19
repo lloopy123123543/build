@@ -39,7 +39,7 @@ Route::prefix("complect/add") -> group( function () {
     Route::post("power", [ComplectController::class, "PowerAdd"]);
     Route::post("cooling", [ComplectController::class, "CoolingAdd"]);
     Route::post("storage", [ComplectController::class, "StorageAdd"]);
-    Route::get("constraineds", [ComplectController::class, "ConstrainedAdd"]);
+    Route::post("constraineds", [ComplectController::class, "ConstrainedAdd"]);
 
 });
 

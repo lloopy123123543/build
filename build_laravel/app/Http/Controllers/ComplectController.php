@@ -511,7 +511,7 @@ class ComplectController extends BaseController
         if ($bearer != '') {
             if ($user != null) {
                 if ($user->login == 'admin') {
-                    $add = Storage::find($id)->first();
+                    $add = Storage::find($id);
                     $add -> delete();
                     return response() -> json(['message' => 'deleted' ]);
                 }else{return response()->json("forbidden for you");}
@@ -593,7 +593,7 @@ class ComplectController extends BaseController
         if ($bearer != '') {
             if ($user != null) {
                 if ($user->login == 'admin') {
-                    $add = Constrained::find($id)->first();
+                    $add = Constrained::find($id);
                     $add -> delete();
                     return response() -> json(['message' => 'deleted' ]);
                 }else{return response()->json("forbidden for you");}

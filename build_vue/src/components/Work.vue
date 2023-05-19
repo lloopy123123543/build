@@ -4,7 +4,9 @@ import { ref } from 'vue'
 import Selector from './Selector.vue'
 
 const complects = ref([])
-axios({
+function action(){
+  console.log("action")
+  axios({
         method: 'get',
         url: 'http://localhost:8000/api/complect/show/constrained',
         headers: {
@@ -17,6 +19,8 @@ axios({
 
       })
       .catch(error => alert("Что то не так"));
+}
+action()
 
 
 
@@ -24,8 +28,9 @@ axios({
 
 <template>
 <div class="w-full from-cyan-500 to-blue-500  p-10">
-  <div class="container mx-auto p-10 grid grid-cols-3">
-    <div v-for="complect in complects" :key="complect.id" class="bg-white p-8 rounded-lg w-3/4 r">
+  <Selector @vizov="action()"></Selector>
+  <div class="container  w-full mx-auto p-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
+    <div v-for="complect in complects" :key="complect.id" class="bg-white min-w-fit p-8 rounded-lg sm:w-3/4 mt-10 ">
       <div class="text-orange-400 font-bold">Код сборки: R{{complect.id }}</div>
       <div>
         <div class="text-2xl font-bold">Материнская плата:</div>
@@ -62,9 +67,13 @@ axios({
         <div>Название:{{ complect.cooling.name}}</div>
         <div>Цена:{{ complect.cooling.cost}}</div>
       </div>
+      <div>
+        <div class="text-2xl font-bold">Общая цена:</div>
+        <div class="text-2xl font-bold text-green-600">{{ complect.cooling.cost +complect.storage.cost + complect.ram.cost + complect.power.cost + complect.processor.cost + complect.motherboard.cost}}</div>
+      </div>
     </div>
   </div>
-  <Selector></Selector>
+
 </div>
 
 
